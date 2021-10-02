@@ -1,0 +1,14 @@
+
+
+.container-fluid{
+    background-color: cyan;
+}
+
+.navbar-brand{
+    padding: 10px;
+}
+
+.clearfix img{
+    width: 200px;
+    height: auto;
+}
