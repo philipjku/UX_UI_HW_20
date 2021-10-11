@@ -51,6 +51,12 @@ p{
     margin: 20px;
 }
 
+a{
+    text-decoration: none;
+    color: #4D0011;
+}
+
 h2{
     text-align: center;
+    color: #4D0011;
 }
