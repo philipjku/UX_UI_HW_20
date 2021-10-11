@@ -19,7 +19,7 @@ body{
 }
 
 .bar{
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 .container-fluid{
@@ -45,6 +45,11 @@ body{
 .largePic{
     height: 500px;
     margin:auto;
+}
+
+#figProto{
+    width: 300px;
+    margin: 0 auto;
 }
 
 p{
