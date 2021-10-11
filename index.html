@@ -4,6 +4,7 @@
     <title>UX/UI Homework 20</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -25,9 +26,136 @@
         </div>
       </nav>
       <!--Nav Bar BS End-->
+      <div id="bar-fixed">
+        <div class="sidebar">
+          <p class="bar"><a href="#">
+        Overview</a>
+          </p>
+          <p class="bar"><a href="#">
+        Research</a>
+          </p>
+          <p class="bar"><a href="#">
+        Definition</a>
+          </p>
+          <p class="bar"><a href="#">
+        Ideation</a>
+          </p>
+          <p class="bar"><a href="#">
+        Prototyping</a>
+          </p>
+          <p class="bar"><a href="#">
+        Testing</a>
+          </p>
+          <p class="bar"><a href="#">
+        Conclusion</a>
+          </p>  
+        </div>
+      </div>
+      <script>
+        var topLimit = $('#bar-fixed').offset().top;
+        $(window).scroll(function() {
+          //console.log(topLimit <= $(window).scrollTop())
+          if (topLimit <= $(window).scrollTop()) {
+            $('#bar-fixed').addClass('stickIt')
+          } else {
+            $('#bar-fixed').removeClass('stickIt')
+          }
+        })
+      </script>
+      <div class="clearfix text-center">
+        <h1>Share Jet</h1>
+        <img src="images/sj1.png" class="smallPic" alt="...">
+        <img src="images/sj2.png" class="smallPic" alt="...">
+        <img src="images/sj3.png" class="smallPic" alt="...">
+      </div>
       <div class="clearfix">
-        <img src="../UX_UI_HW_20/images/sj-logo.png" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+        <h2>Overview</h2>
+        <p>Ever since the pandemic, cross platforms have become a crucial necessity and as socialization has been hindered, many people claim to be experiencing social pressure. 
+            Hence, we thought it would be necessary to find another social outlet, another opportunity to connect with people, while being safe.
+        </p> 
+        <p>We explored multiple alternatives to hone down on the best solution. Through our surveys and interviews, we observed the incline of music exploration and sharing. We wanted to create a more creative outlet to encourage relationship building and meeting new people. Playlist sharing and conversations with people of similar musical interests was our more creative solution to growing social connection and improving the users’ musical experience. 
+        </p>
+      </div>
+      <div class="clearfix">
+        <h2>Research</h2>
+        <p>
+          In this research project, I planned and conducted 4 interviews with potential users. 
+          I also conducted an online survey with 70 responses.
+        </p>
+        <p>
+          
+        </p>
       
+        <p>
+          And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
+        </p>
+        <figure class="figure mx-auto d-block">
+          <img src="images/AffDia.jpg" class="largePic figure-img img-fluid rounded mx-auto d-block" alt="...">
+          <figcaption class="figure-caption">A caption for the above image.</figcaption>
+        </figure>
+      </div>
+      <div class="clearfix">
+        <h2>Definition</h2>
+        <p>
+          A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
+        </p>
+      
+        <p>
+          As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
+        </p>
+      
+        <p>
+          And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
+        </p>
+        <img src="images/persona.png" class="largePic rounded mx-auto d-block" alt="...">
+      </div>
+      <div class="clearfix">
+        <h2>Ideation</h2>
+        <img src="../UX_UI_HW_20/images/sj-logo.png" class="smallPic col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+        <p>
+          A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
+        </p>
+      
+        <p>
+          As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
+        </p>
+      
+        <p>
+          And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
+        </p>
+      </div>
+      <div class="clearfix">
+        <h2>Prototyping</h2>
+        <img src="../UX_UI_HW_20/images/sj-logo.png" class="smallPic col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+        <p>
+          A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
+        </p>
+      
+        <p>
+          As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
+        </p>
+      
+        <p>
+          And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
+        </p>
+      </div>
+      <div class="clearfix">
+        <h2>Testing</h2>
+        <img src="../UX_UI_HW_20/images/sj-logo.png" class="smallPic col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+        <p>
+          After conducting some user testing, we made a few iterations to solve some of the problems the users encountered.
+        </p>
+        <p>
+          The first changes we made were to the chat design.
+          Our users did not understand all the aspects of our chat design, so we simplified it and improved the 
+          We noted that there was unused space to fill in, so we tightened the UI to better fit the screen.
+        </p>
+        <p>
+          Finally, we 
+        </p>
+      </div>
+      <div class="clearfix">
+        <h2>Conclusion</h2>
         <p>
           A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
         </p>
